@@ -22,6 +22,14 @@ body {
   animation: animateTree 6s linear infinite;
 }
 
+.tree::before {
+  content: '⭐️';
+  position: absolute;
+  top: -114px;
+  left: calc(50% - 40px);
+  font-size: 4em;
+}
+
 @keyframes animateTree {
   0% {
     transform: rotateX(-20deg) rotateY(360deg);
