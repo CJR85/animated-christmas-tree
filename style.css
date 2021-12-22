@@ -18,6 +18,16 @@ body {
   height: 300px;
   transform-style: preserve-3d;
   transform: rotateX(-20deg) rotateY(30deg);
+  animation: animateTree 6s linear infinite;
+}
+
+@keyframes animateTree {
+  0% {
+    transform: rotateX(-20deg) rotateY(360deg);
+  }
+  100% {
+    transform: rotateX(-20deg) rotateY(0deg);
+  }
 }
 
 .tree div {
@@ -39,5 +49,5 @@ body {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   transform-origin: bottom;
   border-bottom: 10px solid #00000019;
-  transform: rotateY(calc(90deg * var(--i))) translateZ(150px) rotateX(30deg);
+  transform: rotateY(calc(90deg * var(--i))) rotateX(30deg) translateZ(173px);
 }
