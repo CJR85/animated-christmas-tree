@@ -53,3 +53,16 @@ body {
   border-bottom: 10px solid #00000019;
   transform: rotateY(calc(90deg * var(--i))) rotateX(30deg) translateZ(173px);
 }
+
+.tree div.bottom span {
+  position: absolute;
+  top: 350px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 100%;
+  background: linear-gradient(90deg, #bb4622, #df7214);
+  // clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  transform-origin: bottom;
+  border-bottom: 10px solid #00000055;
+  transform: rotateY(calc(90deg * var(--i))) translateZ(30px);
+}
