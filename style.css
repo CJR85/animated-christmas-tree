@@ -84,7 +84,7 @@ body {
   left: 0;
   width: 300px;
   height: 300px;
-  background: #0002;
+  background: #0000000f;
   transform-style: preserve-3d;
   transform: rotateX(90deg) translateZ(-500px);
   filter: blur(20px);
@@ -107,8 +107,20 @@ body {
   line-height: 1em;
   -webkit-text-stroke: 3px #fff;
   font-weight: 700;
+  transform-style: preserve-3d;
 }
 
 .tree div.text span:nth-child(1) {
   font-size: 6em;
+}
+
+.tree div.text span::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 7px;
+  transform-origin: bottom;
+  transform: rotateX(-90deg);
+  -webkit-text-stroke: 3px #fff;
+  color: rgba(0, 0, 0, 0.1);
+  filter: blur(5px);
 }
