@@ -108,3 +108,7 @@ body {
   -webkit-text-stroke: 3px #fff;
   font-weight: 700;
 }
+
+.tree div.text span:nth-child(1) {
+  font-size: 6em;
+}
